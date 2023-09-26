@@ -1,0 +1,26 @@
+{
+    "name": "furkanakkulak/rapidapitest",
+    "description": "--",
+    "type": "package",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Furkanakkulak\\Rapidapitest\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "furkanakkulak",
+            "email": "akkulak.furkan26@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Furkanakkulak\\Rapidapitest\\Providers\\RapidApiTestServiceProvider"
+            ]
+        }
+    }
+}
