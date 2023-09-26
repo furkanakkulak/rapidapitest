@@ -52,6 +52,6 @@ class MovieService
             'X-RapidAPI-Key' => $this->apiKey,
         ])->get($url . $name);
 
-        return $response->json()['results'] ?? [];
+        return $response->json()['results'];
     }
 }
