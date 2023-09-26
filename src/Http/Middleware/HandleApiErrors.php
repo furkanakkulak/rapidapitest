@@ -19,7 +19,7 @@ class HandleApiErrors
 
         if ($response->isClientError() || $response->isServerError()) {
             $errorMessage = $this->extractApiErrorMessage($response);
-            return new JsonResponse(['error' => $errorMessage ?: 'Unknown error occurred. Please check your API KEY'], $response->getStatusCode());
+            return new JsonResponse(['error' => $errorMessage ?: 'An unknown error occurred. Please check your API KEY or your API subscription.'], $response->getStatusCode());
         }
 
         return $response;
